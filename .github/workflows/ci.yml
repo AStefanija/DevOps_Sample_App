@@ -27,7 +27,3 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t homework3_sample_app .
-
-      - name: Push Docker image to DockerHub (Optional)
-        run: docker push homework3_sample_app
-        if: github.ref == 'refs/heads/master'
