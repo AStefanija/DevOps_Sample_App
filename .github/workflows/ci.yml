@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '17'
-          distribution: 'adoptium'  # Correct JDK distribution name
+          distribution: 'adoptium'  # Make sure you're using the correct distribution name
 
       - name: Build with Maven
         run: mvn clean install
